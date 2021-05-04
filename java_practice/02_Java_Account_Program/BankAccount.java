@@ -20,6 +20,10 @@ public class BankAccount {
         }
     }
 
+    public boolean deposit(double amount, double exchangeRate) {
+        return deposit((int) (amount * exchangeRate));
+    }
+
     // 파라미터 : 출금할 액수(정수)
     // 리턴 : 성공여부(불린)
     boolean withdraw(int amount) {
